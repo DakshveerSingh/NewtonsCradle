@@ -13,9 +13,12 @@ class Bob{
 
     display(){
         var pos = this.body.position;
+        push();
+        translate(pos.x,pos.y);
         ellipseMode(RADIUS);
         stroke("red");
         fill("red");
-        ellipse(pos.x,pos.y,this.radius,this.radius);
+        ellipse(0,0,this.radius,this.radius);
+        pop();
     }
 }

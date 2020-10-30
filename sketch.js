@@ -24,11 +24,11 @@ function setup() {
 	bob3 = new Bob(400,550,20);
 	bob4 = new Bob(440,550,20);
 	bob5 = new Bob(480,550,20);
-	rope1 = new Rope(bob1.body,roof.body,20*2,0);
-	rope2 = new Rope(bob2.body,roof.body,20*2,0);
-	rope3 = new Rope(bob3.body,roof.body,20*2,0);
-	rope4 = new Rope(bob4.body,roof.body,20*2,0);
-	rope5 = new Rope(bob5.body,roof.body,20*2,0);
+	rope1 = new Rope(bob1.body,roof.body,-40*2,0);
+	rope2 = new Rope(bob2.body,roof.body,-40,0);
+	rope3 = new Rope(bob3.body,roof.body,0,0);
+	rope4 = new Rope(bob4.body,roof.body,40,0);
+	rope5 = new Rope(bob5.body,roof.body,40*2,0);
 	
 
 	Engine.run(engine);
@@ -37,7 +37,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background("white");
+  background(180);
 
   roof.display();
   bob1.display();
